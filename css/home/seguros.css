@@ -69,7 +69,7 @@
 /* Responsivo */
 @media (max-width: 800px) {
   .seguros {
-    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
   }
 }
 /* FIM DE SEGUROS */
