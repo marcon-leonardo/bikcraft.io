@@ -1,0 +1,76 @@
+.depoimento {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: var(--cor-P1);
+  overflow: hidden;
+}
+
+.depoimento img {
+  border-radius: 0px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.depoimento-conteudo {
+  padding: 40px 40px 80px 80px;
+  align-self: end;
+  background: url("../../img/decorador/bottom-right-p.svg") no-repeat bottom
+    40px right 40px;
+}
+
+.depoimento-conteudo p {
+  font-family: "Merriweather", serif;
+  font-style: italic;
+  font-weight: 900;
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.depoimento p::before {
+  content: "“";
+  font-size: 5rem;
+  color: var(--cor-P2);
+  position: absolute;
+  left: -45px;
+  top: -25px;
+}
+
+.depoimento p::after {
+  content: "”";
+  font-size: 5rem;
+  color: var(--cor-P2);
+  position: absolute;
+  bottom: -55px;
+}
+
+/* Responsivo */
+@media (min-width: 1200px) {
+  .depoimento img {
+    max-height: 520px;
+  }
+}
+
+@media (max-width: 800px) {
+  .depoimento {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .depoimento-conteudo {
+    padding: 40px 20px;
+    justify-self: center;
+  }
+  .depoimento img {
+    max-height: 300px;
+  }
+  .depoimento p::before {
+    font-size: 3rem;
+    left: -20px;
+    top: -25px;
+  }
+  .depoimento p::after {
+    font-size: 3rem;
+    bottom: -35px;
+  }
+}
+/* Fim do Depoimento */
