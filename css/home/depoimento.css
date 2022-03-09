@@ -27,18 +27,18 @@
   position: relative;
 }
 
-.depoimento p::before {
+.depoimento-conteudo p::before {
   content: "“";
-  font-size: 5rem;
+  font-size: 4rem;
   color: var(--cor-P2);
   position: absolute;
   left: -45px;
   top: -25px;
 }
 
-.depoimento p::after {
+.depoimento-conteudo p::after {
   content: "”";
-  font-size: 5rem;
+  font-size: 4rem;
   color: var(--cor-P2);
   position: absolute;
   bottom: -55px;
@@ -63,14 +63,46 @@
   .depoimento img {
     max-height: 300px;
   }
+  .depoimento-conteudo {
+    background: none;
+  }
+  .depoimento p {
+    max-width: 40ch;
+  }
+  .depoimento p::before {
+    font-size: 4rem;
+    left: -30px;
+    top: -20px;
+  }
+}
+@media (max-width: 700px) {
+  .depoimento p::before {
+    font-size: 4rem;
+    left: -30px;
+    top: -15px;
+  }
+}
+@media (max-width: 650px) {
+  .depoimento p::before {
+    font-size: 3rem;
+    left: -20px;
+    top: -15px;
+  }
+  .depoimento p::after {
+    font-size: 3rem;
+    bottom: -35px;
+  }
+}
+@media (max-width: 500px) {
   .depoimento p::before {
     font-size: 2rem;
-    left: -5px;
-    top: -20px;
+    left: -8px;
+    top: -10px;
   }
   .depoimento p::after {
     font-size: 2rem;
-    bottom: -30px;
+    bottom: -10px;
   }
 }
+
 /* Fim do Depoimento */
