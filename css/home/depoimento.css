@@ -27,7 +27,7 @@
   position: relative;
 }
 
-.depoimento-conteudo p::before {
+.depoimento p::before {
   content: "“";
   font-size: 4rem;
   color: var(--cor-P2);
@@ -36,7 +36,7 @@
   top: -25px;
 }
 
-.depoimento-conteudo p::after {
+.depoimento p::after {
   content: "”";
   font-size: 4rem;
   color: var(--cor-P2);
@@ -101,7 +101,7 @@
   }
   .depoimento p::after {
     font-size: 2.5rem;
-    bottom: -25px;
+    bottom: -30px;
   }
 }
 
