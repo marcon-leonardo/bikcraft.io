@@ -64,13 +64,13 @@
     max-height: 300px;
   }
   .depoimento p::before {
-    font-size: 3rem;
-    left: -20px;
-    top: -25px;
+    font-size: 2rem;
+    left: -5px;
+    top: -20px;
   }
   .depoimento p::after {
-    font-size: 3rem;
-    bottom: -35px;
+    font-size: 2rem;
+    bottom: -30px;
   }
 }
 /* Fim do Depoimento */
